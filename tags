@@ -1,0 +1,87 @@
+ 	morseEncode.js	/^  '@': '10111011101011101',$/;"	p	class:Morse.alpha
+!	morseEncode.js	/^  "'": '1011101110111011101',$/;"	p	class:Morse.alpha
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+"	morseEncode.js	/^  '_': '10101110111010111',$/;"	p	class:Morse.alpha
+$	morseEncode.js	/^  '"': '101110101011101',$/;"	p	class:Morse.alpha
+&	morseEncode.js	/^  ')': '1110101110111010111',$/;"	p	class:Morse.alpha
+'	morseEncode.js	/^  '?': '101011101110101',$/;"	p	class:Morse.alpha
+(	morseEncode.js	/^  '\/': '1110101011101',$/;"	p	class:Morse.alpha
+)	morseEncode.js	/^  '(': '111010111011101',$/;"	p	class:Morse.alpha
++	morseEncode.js	/^  '=': '1110101010111',$/;"	p	class:Morse.alpha
+,	morseEncode.js	/^  '.': '10111010111010111',$/;"	p	class:Morse.alpha
+-	morseEncode.js	/^  '+': '1011101011101',$/;"	p	class:Morse.alpha
+.	morseEncode.js	/^  9: '11101110111011101',$/;"	p	class:Morse.alpha
+/	morseEncode.js	/^  '!': '1110101110101110111',$/;"	p	class:Morse.alpha
+0	morseEncode.js	/^  Z: '11101110101',$/;"	p	class:Morse.alpha
+1	morseEncode.js	/^  0: '1110111011101110111',$/;"	p	class:Morse.alpha
+2	morseEncode.js	/^  1: '10111011101110111',$/;"	p	class:Morse.alpha
+3	morseEncode.js	/^  2: '101011101110111',$/;"	p	class:Morse.alpha
+4	morseEncode.js	/^  3: '1010101110111',$/;"	p	class:Morse.alpha
+5	morseEncode.js	/^  4: '10101010111',$/;"	p	class:Morse.alpha
+6	morseEncode.js	/^  5: '101010101',$/;"	p	class:Morse.alpha
+7	morseEncode.js	/^  6: '11101010101',$/;"	p	class:Morse.alpha
+8	morseEncode.js	/^  7: '1110111010101',$/;"	p	class:Morse.alpha
+9	morseEncode.js	/^  8: '111011101110101',$/;"	p	class:Morse.alpha
+:	morseEncode.js	/^  '&': '10111010101',$/;"	p	class:Morse.alpha
+;	morseEncode.js	/^  ':': '11101110111010101',$/;"	p	class:Morse.alpha
+=	morseEncode.js	/^  ';': '11101011101011101',$/;"	p	class:Morse.alpha
+?	morseEncode.js	/^  ',': '1110111010101110111',$/;"	p	class:Morse.alpha
+@	morseEncode.js	/^  '$': '10101011101010111',$/;"	p	class:Morse.alpha
+A	morseEncode.js	/^Morse.alpha = {$/;"	p	class:Morse.alpha
+B	morseEncode.js	/^  A: '10111',$/;"	p	class:Morse.alpha
+C	morseEncode.js	/^  B: '111010101',$/;"	p	class:Morse.alpha
+D	morseEncode.js	/^  C: '11101011101',$/;"	p	class:Morse.alpha
+DocumentParser	docParser.js	/^function DocumentParser(reader) {$/;"	c
+E	morseEncode.js	/^  D: '1110101',$/;"	p	class:Morse.alpha
+Event	advancedEvents.js	/^function Event(){$/;"	c
+F	morseEncode.js	/^  E: '1',$/;"	p	class:Morse.alpha
+G	morseEncode.js	/^  F: '101011101',$/;"	p	class:Morse.alpha
+H	morseEncode.js	/^  G: '111011101',$/;"	p	class:Morse.alpha
+I	morseEncode.js	/^  H: '1010101',$/;"	p	class:Morse.alpha
+J	morseEncode.js	/^  I: '101',$/;"	p	class:Morse.alpha
+K	morseEncode.js	/^  J: '1011101110111',$/;"	p	class:Morse.alpha
+L	morseEncode.js	/^  K: '111010111',$/;"	p	class:Morse.alpha
+M	morseEncode.js	/^  L: '101110101',$/;"	p	class:Morse.alpha
+Morse	morseEncode.js	/^var Morse = {};$/;"	v
+Morse.decode	morseEncode.js	/^};$/;"	f
+Morse.encode	morseEncode.js	/^var Morse = {};$/;"	f
+N	morseEncode.js	/^  M: '1110111',$/;"	p	class:Morse.alpha
+O	morseEncode.js	/^  N: '11101',$/;"	p	class:Morse.alpha
+P	morseEncode.js	/^  O: '11101110111',$/;"	p	class:Morse.alpha
+Q	morseEncode.js	/^  P: '10111011101',$/;"	p	class:Morse.alpha
+R	morseEncode.js	/^  Q: '1110111010111',$/;"	p	class:Morse.alpha
+S	morseEncode.js	/^  R: '1011101',$/;"	p	class:Morse.alpha
+T	morseEncode.js	/^  S: '10101',$/;"	p	class:Morse.alpha
+U	morseEncode.js	/^  T: '111',$/;"	p	class:Morse.alpha
+V	morseEncode.js	/^  U: '1010111',$/;"	p	class:Morse.alpha
+W	morseEncode.js	/^  V: '101010111',$/;"	p	class:Morse.alpha
+X	morseEncode.js	/^  W: '101110111',$/;"	p	class:Morse.alpha
+Y	morseEncode.js	/^  X: '11101010111',$/;"	p	class:Morse.alpha
+Z	morseEncode.js	/^  Y: '1110101110111',$/;"	p	class:Morse.alpha
+_	morseEncode.js	/^  '-': '111010101010111',$/;"	p	class:Morse.alpha
+binCovert	morseEncode.js	/^  function binCovert(binStr) {$/;"	f	function:Morse.encode
+connectFour	connectFour.js	/^function connectFour(board) {$/;"	f
+convertToUTF	morseEncode.js	/^  function convertToUTF(bin) {$/;"	f	function:Morse.decode
+emit	advancedEvents.js	/^  this.emit = function(...args) {$/;"	m	class:Event
+getStartTime	appointments.js	/^function getStartTime(schedules, duration) {$/;"	f
+intConvert	morseEncode.js	/^  function intConvert(num) {$/;"	f	function:Morse.decode
+isInteresting	mileageNumbers.js	/^function isInteresting(number, awesomePhrases) {$/;"	f
+l	advancedEvents.js	/^function l(arr) { arr.push('l'); }$/;"	f
+longestSlideDown	pyramidSlide.js	/^function longestSlideDown (pyramid) {$/;"	f
+o	advancedEvents.js	/^function o(arr) { arr.push('o'); }$/;"	f
+orderObj	simplifyPoly.js	/^  function orderObj(obj) {$/;"	f	function:simplify
+padOut	morseEncode.js	/^  function padOut(str) {$/;"	f	function:Morse.decode
+parse	docParser.js	/^DocumentParser.prototype.parse = function() {$/;"	m	class:DocumentParser
+recoverSecret	recoverSecret.js	/^var recoverSecret = function(triplets) {$/;"	f
+reset	docParser.js	/^DocumentParser.prototype.reset = function() {$/;"	m	class:DocumentParser
+sched	appointments.js	/^var sched = [$/;"	v
+separate	morseEncode.js	/^  function separate(str, separator) {$/;"	f	function:Morse.decode
+simplify	simplifyPoly.js	/^function simplify(poly) {$/;"	f
+solution	rangeInts.js	/^function solution(list) {$/;"	f
+subscribe	advancedEvents.js	/^  this.subscribe = function(...args) {$/;"	m	class:Event
+unsubscribe	advancedEvents.js	/^  this.unsubscribe = function(...args) {$/;"	m	class:Event
