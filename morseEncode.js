@@ -1,6 +1,6 @@
 var Morse = {};
 
-Morse.encode = function (message) {
+Morse.encode = function(message) {
   // ·–·–·– ·–·–·– ·–·–·–
   let bin = '';
   for (let i = 0; i < message.length; i++) {
@@ -8,7 +8,7 @@ Morse.encode = function (message) {
     if (message[i + 1] !== ' ' && message[i] !== ' ') bin += '000';
   }
 
-  let pads = bin.length < 32 ? 32 - bin.length : bin.length % 32;
+  let pads = bin.length < 32 ? 32 - bin.length : 32 - (bin.length % 32);
 
   if (pads) {
     for (let j = 0; j < pads; j++) {
@@ -19,27 +19,32 @@ Morse.encode = function (message) {
   let binArray = [];
   let init = 0;
   for (let k = 0; k < bin.length; k++) {
-    if ((k + 1) - init === 32) binArray.push(binCovert(bin.substring(init, k + 1))), init = k + 1;
+    if (!((k + 1) % 32)) {
+      binArray.push(binCovert(bin.substring(k - 31, k + 1)));
+    }
   }
 
   function binCovert(binStr) {
     let sign = binStr[0] === '1' ? '-' : '';
     let numBin = parseInt(binStr, 2);
-    return +(sign + (Math.pow(2, 32) - numBin));
+    return sign ? +(sign + (Math.pow(2, 32) - numBin)) : +(sign + numBin);
   }
 
   return binArray;
-
 };
 
-Morse.decode = function (integerArray) {
+Morse.decode = function(integerArray) {
   // ·–·–·– ·–·–·– ·–·–·–
   let converted = integerArray.map(ele => intConvert(ele)).join('');
-  let tempStr = converted;
-  let preMorse = [];
 
   function intConvert(num) {
-    return (Math.pow(2, 32) + num).toString(2);
+    if (num < 0) {
+      return (Math.pow(2, 32) + num).toString(2);
+    } else {
+      let numStr = num.toString(2);
+      while (numStr.length !== 32) numStr = '0' + numStr;
+      return numStr;
+    }
   }
 
   function padOut(str) {
@@ -53,12 +58,15 @@ Morse.decode = function (integerArray) {
     let temp = str;
     let len = separator.length;
 
-    while (temp.indexOf(separator) > -1) {
-      arr.push(temp.substring(0, temp.indexOf(separator)));
-      temp = temp.substring(temp.indexOf(separator) + len);
-      if (temp.indexOf(separator) < 0) arr.push(temp);
+    if (temp.indexOf(separator) > -1) {
+      while (temp.indexOf(separator) > -1) {
+        arr.push(temp.substring(0, temp.indexOf(separator)));
+        temp = temp.substring(temp.indexOf(separator) + len);
+        if (temp.indexOf(separator) < 0) arr.push(temp);
+      }
+    } else {
+      arr.push(str)
     }
-
     return arr;
   }
 
@@ -68,12 +76,11 @@ Morse.decode = function (integerArray) {
     }
   }
 
-  return separate(padOut(tempStr), '0000000')
+  return separate(padOut(converted), '0000000')
     .map(el => separate(el, '000')
       .map(ele => convertToUTF(ele))
       .join(''))
     .join(' ');
-
 };
 
 Morse.alpha = {
@@ -142,4 +149,7 @@ Morse.alpha = {
 // Test.assertEquals(Morse.decode([-298086688]), 'MMM', 'Numbers must be converted into 32-bit integers. Try using a bitwise operator to force the conversion.');
 // Test.assertEquals(Morse.decode([3996880608]), 'MMM', 'Numbers must be converted into 32-bit integers. Try using a bitwise operator to force the conversion.');
 
-console.log(Morse.decode([-1440552402, -1547992901, -1896993141, -1461059584]));
+// console.log(33 % 32)
+// console.log(Morse.decode([-2004318070, 536870912]));
+// console.log(Morse.encode('EEEEEEEIE'))
+// console.log(Morse.decode([-1440552402, -1547992901, -1896993141, -1461059584]));
