@@ -1,9 +1,9 @@
 //still not passing 10million element test
+//consider tree structure??
 var sum_pairs = function(ints, s) {
   let i, index, len = ints.length,
     min = Infinity,
-    pair,
-    visited = [];
+    pair;
 
   for (i = 0; i < len; i++) {
 
@@ -16,7 +16,6 @@ var sum_pairs = function(ints, s) {
       ints.splice(index, 1);
       i--;
     }
-
   }
 
   return pair;

@@ -64,16 +64,23 @@ X	morseEncode.js	/^  W: '101110111',$/;"	p	class:Morse.alpha
 Y	morseEncode.js	/^  X: '11101010111',$/;"	p	class:Morse.alpha
 Z	morseEncode.js	/^  Y: '1110101110111',$/;"	p	class:Morse.alpha
 _	morseEncode.js	/^  '-': '111010101010111',$/;"	p	class:Morse.alpha
+autocomplete	autocomplete.js	/^function autocomplete(input, dictionary){$/;"	f
 binCovert	morseEncode.js	/^  function binCovert(binStr) {$/;"	f	function:Morse.encode
+chained	chainer.js	/^function chained(functions) {$/;"	f
+charGenerator	xmasTree.js	/^function charGenerator(chr) {$/;"	f
+christmasTree	xmasTree.js	/^function christmasTree(height) {$/;"	f
 connectFour	connectFour.js	/^function connectFour(board) {$/;"	f
 convertToUTF	morseEncode.js	/^  function convertToUTF(bin) {$/;"	f	function:Morse.decode
+deleteNth	deleteNth.js	/^function deleteNth(arr, x) {$/;"	f
 emit	advancedEvents.js	/^  this.emit = function(...args) {$/;"	m	class:Event
 getStartTime	appointments.js	/^function getStartTime(schedules, duration) {$/;"	f
+hammingWeight	hammingWeight.js	/^function hammingWeight(x){$/;"	f
 intConvert	morseEncode.js	/^  function intConvert(num) {$/;"	f	function:Morse.decode
 isInteresting	mileageNumbers.js	/^function isInteresting(number, awesomePhrases) {$/;"	f
 l	advancedEvents.js	/^function l(arr) { arr.push('l'); }$/;"	f
 longestSlideDown	pyramidSlide.js	/^function longestSlideDown (pyramid) {$/;"	f
 o	advancedEvents.js	/^function o(arr) { arr.push('o'); }$/;"	f
+order	stringOrder.js	/^function order(words) {$/;"	f
 orderObj	simplifyPoly.js	/^  function orderObj(obj) {$/;"	f	function:simplify
 padOut	morseEncode.js	/^  function padOut(str) {$/;"	f	function:Morse.decode
 parse	docParser.js	/^DocumentParser.prototype.parse = function() {$/;"	m	class:DocumentParser
@@ -84,4 +91,6 @@ separate	morseEncode.js	/^  function separate(str, separator) {$/;"	f	function:M
 simplify	simplifyPoly.js	/^function simplify(poly) {$/;"	f
 solution	rangeInts.js	/^function solution(list) {$/;"	f
 subscribe	advancedEvents.js	/^  this.subscribe = function(...args) {$/;"	m	class:Event
+sum_pairs	sumPairs.js	/^var sum_pairs = function(ints, s) {$/;"	f
 unsubscribe	advancedEvents.js	/^  this.unsubscribe = function(...args) {$/;"	m	class:Event
+validatePIN	validatePIN.js	/^function validatePIN(pin){$/;"	f
