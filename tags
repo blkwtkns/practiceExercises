@@ -95,3 +95,4 @@ subscribe	advancedEvents.js	/^  this.subscribe = function(...args) {$/;"	m	class
 sum_pairs	sumPairs.js	/^var sum_pairs = function(ints, s) {$/;"	f
 unsubscribe	advancedEvents.js	/^  this.unsubscribe = function(...args) {$/;"	m	class:Event
 validatePIN	validatePIN.js	/^function validatePIN(pin){$/;"	f
+zeros	trailingZeros.js	/^function zeros(n) {$/;"	f
