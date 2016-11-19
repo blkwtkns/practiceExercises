@@ -70,6 +70,7 @@ chained	chainer.js	/^function chained(functions) {$/;"	f
 charGenerator	xmasTree.js	/^function charGenerator(chr) {$/;"	f
 christmasTree	xmasTree.js	/^function christmasTree(height) {$/;"	f
 connectFour	connectFour.js	/^function connectFour(board) {$/;"	f
+const	countBits.js	/^const countBits = function(n) {$/;"	f
 convertToUTF	morseEncode.js	/^  function convertToUTF(bin) {$/;"	f	function:Morse.decode
 deleteNth	deleteNth.js	/^function deleteNth(arr, x) {$/;"	f
 emit	advancedEvents.js	/^  this.emit = function(...args) {$/;"	m	class:Event
