@@ -34,6 +34,7 @@ $	morseEncode.js	/^  '"': '101110101011101',$/;"	p	class:Morse.alpha
 @	morseEncode.js	/^  '$': '10101011101010111',$/;"	p	class:Morse.alpha
 A	morseEncode.js	/^Morse.alpha = {$/;"	p	class:Morse.alpha
 B	morseEncode.js	/^  A: '10111',$/;"	p	class:Morse.alpha
+Block	memManager.js	/^function Block(start, size) {$/;"	c
 C	morseEncode.js	/^  B: '111010101',$/;"	p	class:Morse.alpha
 D	morseEncode.js	/^  C: '11101011101',$/;"	p	class:Morse.alpha
 DocumentParser	docParser.js	/^function DocumentParser(reader) {$/;"	c
@@ -47,6 +48,7 @@ J	morseEncode.js	/^  I: '101',$/;"	p	class:Morse.alpha
 K	morseEncode.js	/^  J: '1011101110111',$/;"	p	class:Morse.alpha
 L	morseEncode.js	/^  K: '111010111',$/;"	p	class:Morse.alpha
 M	morseEncode.js	/^  L: '101110101',$/;"	p	class:Morse.alpha
+MemoryManager	memManager.js	/^function MemoryManager(memory) {$/;"	c
 Morse	morseEncode.js	/^var Morse = {};$/;"	v
 Morse.decode	morseEncode.js	/^};$/;"	f
 Morse.encode	morseEncode.js	/^var Morse = {};$/;"	f
@@ -64,24 +66,39 @@ X	morseEncode.js	/^  W: '101110111',$/;"	p	class:Morse.alpha
 Y	morseEncode.js	/^  X: '11101010111',$/;"	p	class:Morse.alpha
 Z	morseEncode.js	/^  Y: '1110101110111',$/;"	p	class:Morse.alpha
 _	morseEncode.js	/^  '-': '111010101010111',$/;"	p	class:Morse.alpha
+allocate	memManager.js	/^MemoryManager.prototype.allocate = function(size) {$/;"	m	class:MemoryManager
+autocomplete	autocomplete.js	/^function autocomplete(input, dictionary){$/;"	f
 binCovert	morseEncode.js	/^  function binCovert(binStr) {$/;"	f	function:Morse.encode
+chained	chainer.js	/^function chained(functions) {$/;"	f
+charGenerator	xmasTree.js	/^function charGenerator(chr) {$/;"	f
+christmasTree	xmasTree.js	/^function christmasTree(height) {$/;"	f
 connectFour	connectFour.js	/^function connectFour(board) {$/;"	f
+const	countBits.js	/^const countBits = function(n) {$/;"	f
 convertToUTF	morseEncode.js	/^  function convertToUTF(bin) {$/;"	f	function:Morse.decode
+deleteNth	deleteNth.js	/^function deleteNth(arr, x) {$/;"	f
 emit	advancedEvents.js	/^  this.emit = function(...args) {$/;"	m	class:Event
 getStartTime	appointments.js	/^function getStartTime(schedules, duration) {$/;"	f
+hammingWeight	hammingWeight.js	/^function hammingWeight(x){$/;"	f
 intConvert	morseEncode.js	/^  function intConvert(num) {$/;"	f	function:Morse.decode
 isInteresting	mileageNumbers.js	/^function isInteresting(number, awesomePhrases) {$/;"	f
 l	advancedEvents.js	/^function l(arr) { arr.push('l'); }$/;"	f
 longestSlideDown	pyramidSlide.js	/^function longestSlideDown (pyramid) {$/;"	f
 o	advancedEvents.js	/^function o(arr) { arr.push('o'); }$/;"	f
+order	stringOrder.js	/^function order(words) {$/;"	f
 orderObj	simplifyPoly.js	/^  function orderObj(obj) {$/;"	f	function:simplify
 padOut	morseEncode.js	/^  function padOut(str) {$/;"	f	function:Morse.decode
 parse	docParser.js	/^DocumentParser.prototype.parse = function() {$/;"	m	class:DocumentParser
+read	memManager.js	/^MemoryManager.prototype.read = function(pointer) {$/;"	m	class:MemoryManager
 recoverSecret	recoverSecret.js	/^var recoverSecret = function(triplets) {$/;"	f
+release	memManager.js	/^MemoryManager.prototype.release = function(pointer) {$/;"	m	class:MemoryManager
 reset	docParser.js	/^DocumentParser.prototype.reset = function() {$/;"	m	class:DocumentParser
 sched	appointments.js	/^var sched = [$/;"	v
 separate	morseEncode.js	/^  function separate(str, separator) {$/;"	f	function:Morse.decode
 simplify	simplifyPoly.js	/^function simplify(poly) {$/;"	f
 solution	rangeInts.js	/^function solution(list) {$/;"	f
 subscribe	advancedEvents.js	/^  this.subscribe = function(...args) {$/;"	m	class:Event
+sum_pairs	sumPairs.js	/^var sum_pairs = function(ints, s) {$/;"	f
 unsubscribe	advancedEvents.js	/^  this.unsubscribe = function(...args) {$/;"	m	class:Event
+validatePIN	validatePIN.js	/^function validatePIN(pin){$/;"	f
+write	memManager.js	/^MemoryManager.prototype.write = function(pointer, value) {$/;"	m	class:MemoryManager
+zeros	trailingZeros.js	/^function zeros(n) {$/;"	f
