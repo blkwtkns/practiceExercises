@@ -1,0 +1,26 @@
+{
+  "name": "exercises",
+  "version": "1.0.0",
+  "description": "Practice exercises for keeping sharp and interviewing",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blkwtkns/practiceExercises.git"
+  },
+  "author": "blake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blkwtkns/practiceExercises/issues"
+  },
+  "homepage": "https://github.com/blkwtkns/practiceExercises#readme",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^3.1.2"
+  }
+}
