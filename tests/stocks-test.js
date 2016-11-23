@@ -1,4 +1,5 @@
-let expect = require('expect.js');
+let chai = require('chai');
+let assert = chai.assert;
 let bestProfit;
 
 try {
@@ -12,15 +13,15 @@ if (typeof bestProfit === 'function') {
   describe('apple-stocks test', () => {
 
     it('should be highest profit gain', () => {
-      expect(bestProfit([5, 4, 8, 9, 2])).to.be(5);
-      expect(bestProfit([1, 6, 15, 4, 9, 3, 22])).to.be(21);
-      expect(bestProfit([8, 5, 4, 3, 2, 9, 2])).to.be(7);
+      assert.equal(bestProfit([5, 4, 8, 9, 2]), 5);
+      assert.equal(bestProfit([1, 6, 15, 4, 9, 3, 22]), 21);
+      assert.equal(bestProfit([8, 5, 4, 3, 2, 9, 2]), 7);
     });
 
     it('should return 0 if no profit is possible OR input is invalid', () => {
-      expect(bestProfit([40, 35, 30, 25, 20, 15, 10, 5])).to.be(0);
-      expect(bestProfit([])).to.be(0);
-      expect(bestProfit()).to.be(0);
+      assert.equal(bestProfit([40, 35, 30, 25, 20, 15, 10, 5]), 0);
+      assert.equal(bestProfit([]), 0);
+      assert.equal(bestProfit(), 0);
     });
 
   });
