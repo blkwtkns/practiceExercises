@@ -13,15 +13,28 @@ function nextBigger(num) {
   let str = '' + num;
   let i;
 
-  for (let i = str.length - 1; i > 0; i--) {
-    if (+(str[i] + str[i - 1]) > +(str[i - 1] + str[i])) {
-      return +(str.substring(0, i - 1) + (str[i] + str[i - 1]) + str.substring(i + 1));
+  let bar;
+  for (i = str.length - 2; i >= 0; i--) {
+    bar = inspect(str[i], str.substring(i + 1));
+    if (bar) return +(str.substring(0, i) + bar);
+  }
+
+  function inspect(subj, obj) {
+    let sorted = obj
+      .split('')
+      .sort((a, b) => +a - +b);
+
+    let j;
+    let len = sorted.length;
+    for (j = 0; j < len; j++) {
+      if (+subj < +sorted[j]) return sorted.splice(j, 1, subj) + sorted.join('');
     }
 
+    return false;
   }
 
   return -1;
 }
 
-// console.log([1,2,3].sort((a,b) => b - a))
+// console.log(nextBigger(12));
 module.exports = nextBigger;

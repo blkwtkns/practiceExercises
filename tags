@@ -84,6 +84,7 @@ fn.valueOf	trampolineChainAdd.js	/^  };$/;"	f
 getMaxProfit	stocks.js	/^function getMaxProfit(prices) {$/;"	f
 getStartTime	appointments.js	/^function getStartTime(schedules, duration) {$/;"	f
 hammingWeight	hammingWeight.js	/^function hammingWeight(x){$/;"	f
+inspect	nextBigger.js	/^  function inspect(subj, obj) {$/;"	f	function:nextBigger
 intConvert	morseEncode.js	/^  function intConvert(num) {$/;"	f	function:Morse.decode
 isInteresting	mileageNumbers.js	/^function isInteresting(number, awesomePhrases) {$/;"	f
 l	advancedEvents.js	/^function l(arr) { arr.push('l'); }$/;"	f
