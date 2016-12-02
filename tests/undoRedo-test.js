@@ -40,8 +40,8 @@ if (typeof undoRedo === 'function') {
       unRe.undo();
       assert.equal(unRe.get('y'), 2, 'The undo method restores the previous state');
       try {
-        unRe.undo();
-        expect(false, 'It should have thrown an exception');
+        // unRe.undo();
+        expect(unRe.undo(),false, 'It should have thrown an exception');
 
       } catch (e) {
         assert.equal(unRe.get('y'), 2);
@@ -77,13 +77,13 @@ if (typeof undoRedo === 'function') {
       unRe.undo();
       assert.equal(unRe.get('y'), 2, 'Undo the y value');
       assert.equal(unRe.get('x'), 1, 'The x key stays the same');
-      // try {
-      //   unRe.undo();
-      //   expect(false, 'It should have thrown an exception');
-      //
-      // } catch (e) {
-      //   assert.equal(unRe.get('y'), 2, 'There is nothing to undo');
-      // }
+      try {
+        unRe.undo();
+        expect(unRe.undo(), false, 'It should have thrown an exception');
+
+      } catch (e) {
+        assert.equal(unRe.get('y'), 2, 'There is nothing to undo');
+      }
       unRe.redo();
       unRe.redo();
       unRe.redo();
@@ -92,7 +92,7 @@ if (typeof undoRedo === 'function') {
       assert.equal(unRe.get('x'), 50, 'y key redo state');
       try {
         unRe.redo();
-        expect(false, 'It should have thrown an exception');
+        expect(unRe.redo(), false, 'It should have thrown an exception');
 
       } catch (e) {
         assert.equal(unRe.get('y'), 100, 'There is nothing to redo');

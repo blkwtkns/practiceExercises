@@ -1,14 +1,12 @@
 function undoRedo(object) {
 
   return {
-    pointer: null,
     history: [],
     unHistory: [],
     set: function(key, value) {
-      let bar = object[key] ? object[key] : undefined;
-      this.history.push([key, bar]);
+      let maybe = object[key] ? object[key] : undefined;
+      this.history.push([key, maybe]);
       object[key] = value;
-      this.pointer = this.history.length - 1;
     },
 
     get: function(key) {
@@ -17,28 +15,46 @@ function undoRedo(object) {
 
     del: function(key) {
       if (object[key]) {
-        let foo = object[key];
-        this.history.push([key, foo]);
+        let valu = object[key];
+        this.history.push([key, valu]);
         delete object[key];
-        this.pointer = this.history.length - 1;
       }
     },
 
     undo: function() {
-      if (this.pointer < 0) throw new Error();
-      else {
-        let key = this.history[this.pointer][0];
-        let baz = object[key];
-        this.unHistory.push([key, baz]);
-        object[key] = this.history[this.pointer][1];
-        if (this.pointer > 0) this.pointer--;
+      try {
+        let undone = this.history.pop();
+        let key = undone[0];
+        let val = object[key];
+        this.unHistory.push([key, val]);
+        
+        if(undone[1] === undefined) {
+          delete object[key];
+        }else{
+          object[key] = undone[1];
+        }
+        
+      } catch (e) {
+        throw false;
       }
     },
 
     redo: function() {
-      let redone = this.unHistory.pop();
-      this.pointer++;
-      object[redone[0]] = redone[1];
+      try {
+        let redone = this.unHistory.pop();
+        let k = redone[0];
+        let v = object[k];
+        this.history.push([k, v])
+        
+        if(redone[1] === undefined) {
+          delete object[k];
+        }else{
+          object[k] = redone[1];
+        }
+        
+      } catch (e) {
+        throw false;
+      }
     }
   };
 }
